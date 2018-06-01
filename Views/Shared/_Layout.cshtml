@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - school</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/4.0.0-beta.3/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/mdb/dist/css/mdb.min.css">
+        <link rel="stylesheet" href="~/lib/font-awesome/dist/css/font-awesome.min.css">
+        <link rel="stylesheet" href="~/css/site.css" />
+
+
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/4.0.0-beta.3/js/bootstrap.js"></script>
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body class="fixed-sn black-skin">
+    
+    <header>
+
+        <!-- Sidebar navigation -->
+        <div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="fa sidenav-fa fa-home sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa sidenav-fa fa-suitcase sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Subject Material
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa sidenav-fa fa-pencil-square-o sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Assignment
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa sidenav-fa fa-file-text sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Quiz
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Report">
+                        <i class="fa sidenav-fa fa-bar-chart-o sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Report Card
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                       <i class="fa sidenav-fa fa-graduation-cap sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Grade
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class="fa sidenav-fa fa-calendar sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Calendar
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <i class="fa sidenav-fa fa-book sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Library
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa sidenav-fa fa-power-off sidenav-fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        <!--/. Sidebar navigation -->
+            
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <p>Hello, <span class="username">Katelyn J.</span></p>
+            </div>
+
+            <!--Navbar links-->
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown notifications-nav">
+                        <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span class="badge red">1</span> <i class="fa fa-bell"></i>
+                            <span class="d-none d-md-inline-block">Notifications</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-exclamation mr-2" aria-hidden="true"></i>
+                                <span>Deadline for Math quiz</span>
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Profile</span>
+                        </a>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            @*<a class="dropdown-item" href="#">Log Out</a>*@
+                            <a class="dropdown-item" href="#">My account</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <!--/Navbar links-->
+        </nav>
+        <!-- /.Navbar -->
+
+    </header>
+    <!--Main Navigation-->
+
+
+    <main>    
+        <div class="container-fluid">
+                <section class="section team-section">
+                    @RenderBody()
+                </section>
+            
+            <hr />
+            <footer>
+               <!-- <p>&copy; 2018 - school</p>-->
+            </footer>
+        </div>
+    </main>
+    <environment include="Development">
+<!--        <script src="~/lib/mdb/dist/js/mdb.min.js"></script>-->
+        <script src="~/lib/mdb/dist/js/compiled.min.js"></script>
+        <script src="~/lib/chartjs/dist/js/Chart.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <link rel="stylesheet" href="~/css/sidenav.css" />
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+
+
+</body>
+</html>

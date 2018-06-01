@@ -1,0 +1,101 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace school.Model
+{
+    public partial class CopProduction
+    {
+        public int Budgetjobid { get; set; }
+        public int Itemid { get; set; }
+        public int BomLineid { get; set; }
+        public string Itemdesc { get; set; }
+        public string Itemtype { get; set; }
+        public string Itemcostcenter { get; set; }
+        public string BomDesc { get; set; }
+        public string BomCostelement { get; set; }
+        public string BomUom { get; set; }
+        public decimal? VolMtp1 { get; set; }
+        public decimal? VolJan1 { get; set; }
+        public decimal? VolFeb1 { get; set; }
+        public decimal? VolMar1 { get; set; }
+        public decimal? VolApr1 { get; set; }
+        public decimal? VolMay1 { get; set; }
+        public decimal? VolJun1 { get; set; }
+        public decimal? VolJul1 { get; set; }
+        public decimal? VolAug1 { get; set; }
+        public decimal? VolSep1 { get; set; }
+        public decimal? VolOct1 { get; set; }
+        public decimal? VolNov1 { get; set; }
+        public decimal? VolDec1 { get; set; }
+        public decimal? VolMtp2 { get; set; }
+        public decimal? VolJan2 { get; set; }
+        public decimal? VolFeb2 { get; set; }
+        public decimal? VolMar2 { get; set; }
+        public decimal? VolApr2 { get; set; }
+        public decimal? VolMay2 { get; set; }
+        public decimal? VolJun2 { get; set; }
+        public decimal? VolJul2 { get; set; }
+        public decimal? VolAug2 { get; set; }
+        public decimal? VolSep2 { get; set; }
+        public decimal? VolOct2 { get; set; }
+        public decimal? VolNov2 { get; set; }
+        public decimal? VolDec2 { get; set; }
+        public decimal? VolMtp3 { get; set; }
+        public decimal? VolJan3 { get; set; }
+        public decimal? VolFeb3 { get; set; }
+        public decimal? VolMar3 { get; set; }
+        public decimal? VolApr3 { get; set; }
+        public decimal? VolMay3 { get; set; }
+        public decimal? VolJun3 { get; set; }
+        public decimal? VolJul3 { get; set; }
+        public decimal? VolAug3 { get; set; }
+        public decimal? VolSep3 { get; set; }
+        public decimal? VolOct3 { get; set; }
+        public decimal? VolNov3 { get; set; }
+        public decimal? VolDec3 { get; set; }
+        public decimal? CstMtp1 { get; set; }
+        public decimal? CstJan1 { get; set; }
+        public decimal? CstFeb1 { get; set; }
+        public decimal? CstMar1 { get; set; }
+        public decimal? CstApr1 { get; set; }
+        public decimal? CstMay1 { get; set; }
+        public decimal? CstJun1 { get; set; }
+        public decimal? CstJul1 { get; set; }
+        public decimal? CstAug1 { get; set; }
+        public decimal? CstSep1 { get; set; }
+        public decimal? CstOct1 { get; set; }
+        public decimal? CstNov1 { get; set; }
+        public decimal? CstDec1 { get; set; }
+        public decimal? CstMtp2 { get; set; }
+        public decimal? CstJan2 { get; set; }
+        public decimal? CstFeb2 { get; set; }
+        public decimal? CstMar2 { get; set; }
+        public decimal? CstApr2 { get; set; }
+        public decimal? CstMay2 { get; set; }
+        public decimal? CstJun2 { get; set; }
+        public decimal? CstJul2 { get; set; }
+        public decimal? CstAug2 { get; set; }
+        public decimal? CstSep2 { get; set; }
+        public decimal? CstOct2 { get; set; }
+        public decimal? CstNov2 { get; set; }
+        public decimal? CstDec2 { get; set; }
+        public decimal? CstMtp3 { get; set; }
+        public decimal? CstJan3 { get; set; }
+        public decimal? CstFeb3 { get; set; }
+        public decimal? CstMar3 { get; set; }
+        public decimal? CstApr3 { get; set; }
+        public decimal? CstMay3 { get; set; }
+        public decimal? CstJun3 { get; set; }
+        public decimal? CstJul3 { get; set; }
+        public decimal? CstAug3 { get; set; }
+        public decimal? CstSep3 { get; set; }
+        public decimal? CstOct3 { get; set; }
+        public decimal? CstNov3 { get; set; }
+        public decimal? CstDec3 { get; set; }
+        public string Createdby { get; set; }
+        public DateTime? Createddate { get; set; }
+        public string Modifiedby { get; set; }
+        public DateTime? Modifieddate { get; set; }
+        public bool? Isdeleted { get; set; }
+    }
+}

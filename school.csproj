@@ -1,0 +1,188 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\site.css" />
+    <Content Remove="wwwroot\wwwroot\css\sidenav.css" />
+    <Content Remove="Views\Report\Index.cshtml" />
+    <Content Remove="wwwroot\css\sidenav.css" />
+    <Content Remove="wwwroot\css\site.min.css" />
+    <Content Remove="wwwroot\images\banner1.svg" />
+    <Content Remove="wwwroot\images\banner2.svg" />
+    <Content Remove="wwwroot\images\banner3.svg" />
+    <Content Remove="wwwroot\images\banner4.svg" />
+    <Content Remove="wwwroot\images\img %2810%29.jpg" />
+    <Content Remove="wwwroot\js\site.js" />
+    <Content Remove="wwwroot\js\site.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\.bower.json" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.css" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.css" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.css" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.js" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <Content Remove="wwwroot\lib\bootstrap\LICENSE" />
+    <Content Remove="wwwroot\lib\chartjs\dist\js\Chart.min.js" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\css\font-awesome.min.css" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\fa\FontAwesome.otf" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.eot" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.svg" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.ttf" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.woff" />
+    <Content Remove="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.woff2" />
+    <Content Remove="wwwroot\lib\jquery\.bower.json" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <Content Remove="wwwroot\lib\jquery\LICENSE.txt" />
+    <Content Remove="wwwroot\lib\jquery-validation\.bower.json" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\.bower.json" />
+    <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Remove="wwwroot\lib\mdb\dist\css\mdb.min.css" />
+    <Content Remove="wwwroot\lib\mdb\dist\js\compiled.min.js" />
+    <Content Remove="wwwroot\lib\mdb\dist\js\mdb.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Report\Index.cshtml" />
+    <None Include="wwwroot\css\sidenav.css" />
+    <None Include="wwwroot\css\site.css" />
+    <None Include="wwwroot\css\site.min.css" />
+    <None Include="wwwroot\images\banner1.svg" />
+    <None Include="wwwroot\images\banner2.svg" />
+    <None Include="wwwroot\images\banner3.svg" />
+    <None Include="wwwroot\images\banner4.svg" />
+    <None Include="wwwroot\images\img %2810%29.jpg" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\js\site.min.js" />
+    <None Include="wwwroot\lib\bootstrap\.bower.json" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.css" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.min.css" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.css" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\4.0.0-beta.3\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\chartjs\dist\js\Chart.min.js" />
+    <None Include="wwwroot\lib\font-awesome\dist\css\font-awesome.min.css" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\fa\FontAwesome.otf" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.eot" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.svg" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.woff" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\fa\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\lib\font-awesome\dist\font\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\lib\jquery\.bower.json" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\lib\jquery\LICENSE.txt" />
+    <None Include="wwwroot\lib\jquery-validation\.bower.json" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\.bower.json" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\mdb\dist\css\mdb.min.css" />
+    <None Include="wwwroot\lib\mdb\dist\js\compiled.min.js" />
+    <None Include="wwwroot\lib\mdb\dist\js\mdb.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+</Project>

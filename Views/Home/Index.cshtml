@@ -1,0 +1,308 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="~/images/img%20(10).jpg" class="rounded-circle" alt="First sample avatar image">
+    </div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="font-weight-bold green-text">Katelyn Joanne</h2>    
+            </div>
+
+        </div>    
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2">
+                        <strong>Grade</strong>
+                    </div>
+                    <div class="col-md-10">
+                        <label>: X</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <strong>Class</strong>
+                    </div>
+                    <div class="col-md-10">
+                        <label>: X IPA 1</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <strong>Email</strong>
+                    </div>
+                    <div class="col-md-10">
+                        <label>: katelyn@gmail.com</label>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-2">
+                        <strong>Phone</strong>
+                    </div>
+                    <div class="col-md-10">
+                        <label>: +62818645798</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <span class="min-chart" id="chart-attendance" data-percent="100"><span class="percent"></span></span>
+                        <h5><span class="font-weight-bold">Class Attendance</span></h5>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <span class="min-chart" id="chart-lateness" data-percent="90"><span class="percent"></span></span>
+                        <h5><span class="font-weight-bold">Lateness</span></h5>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <span class="min-chart" id="chart-score" data-percent="95"><span class="percent"></span></span>
+                        <h5><span class="font-weight-bold">Avg. Score</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<br>
+<div class="row">
+    <div class="col-md-8">
+        <!--Table-->
+        <table class="table">
+
+            <!--Table head-->
+            <thead class="success-color">
+                <tr class="text-white text-center">
+                    <th colspan="6">Class Schedule</th>
+                </tr>
+                <tr class="text-white text-center">
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <!--Table head-->
+
+            <!--Table body-->
+            <tbody>
+                <tr class="text-center">
+                    <td>07.00 - 09.00</td>
+                    <td>Matematika</td>
+                    <td>Fisika</td>
+                    <td>Biologi</td>
+                    <td>Sejarah</td>
+                    <td>Musik</td>
+                </tr>
+                <tr class="text-center">
+                    <td>09.15 - 10.45</td>
+                    <td>Kimia</td>
+                    <td>Olah Raga</td>
+                    <td>Sejarah</td>
+                    <td>Akuntansi</td>
+                    <td>Komputer</td>
+                </tr>
+                <tr class="text-center">
+                    <td>11.00 - 12.30</td>
+                    <td>Matematika</td>
+                    <td>Fisika</td>
+                    <td>Biologi</td>
+                    <td>Sejarah</td>
+                    <td>Musik</td>
+                </tr>
+                <tr class="text-center">
+                    <td>12.30 - 14.00</td>
+                    <td>Kimia</td>
+                    <td>Olah Raga</td>
+                    <td>Sejarah</td>
+                    <td>Akuntansi</td>
+                    <td>Komputer</td>
+                </tr>
+                <tr class="text-center">
+                    <td>14.00 - 15.00</td>
+                    <td>Matematika</td>
+                    <td>Fisika</td>
+                    <td>Biologi</td>
+                    <td>Sejarah</td>
+                    <td>Musik</td>
+                </tr>
+            </tbody>
+            <!--Table body-->
+
+        </table>
+        <!--Table-->
+    </div>
+    <div class="col-md-4">
+        <!--Table-->
+        <table class="table table-hover">
+
+            <!--Table head-->
+            <thead class="success-color">
+                <tr class="text-white">
+                    <th><i class="fa fa-bullhorn fa-fw"></i>&nbsp;Announcement</th>
+                </tr>
+            </thead>
+            <!--Table head-->
+
+            <!--Table body-->
+            <tbody>
+                <tr>
+                    <td>
+                        Pentas Seni Budaya akan diselenggarakan pada 10 Nov 2018
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Kompetisi Olah Raga akan diadakan pada 17 Agustus 2018
+                    </td>
+                </tr>
+                <tr>
+                    <td>Libur Lebaran tanggal 12 - 28 Juni 2018</td>
+                </tr>
+            </tbody>
+            <!--Table body-->
+
+        </table>
+        <!--Table-->
+    </div>
+</div>
+
+
+<!--<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how to build ASP.NET apps that can run anywhere.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    There are powerful new features in Visual Studio for building modern web apps.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Application uses</h2>
+        <ul>
+            <li>Sample pages using ASP.NET Core MVC</li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
+            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>How to</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Overview</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Run &amp; Deploy</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+        </ul>
+    </div>
+</div>-->
+
+<script type="text/javascript">
+$(function () {
+    $('.min-chart#chart-attendance').easyPieChart({
+        barColor: "#4caf50",
+        onStep: function (from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+        }
+    });
+
+    $('.min-chart#chart-lateness').easyPieChart({
+        barColor: "red",
+        onStep: function (from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+        }
+    });
+
+    $('.min-chart#chart-score').easyPieChart({
+        barColor: "#4caf50",
+        onStep: function (from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+        }
+    });
+});
+</script>

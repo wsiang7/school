@@ -1,0 +1,11 @@
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/bin/Debug/netcoreapp2.0/school.deps.json
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/bin/Debug/netcoreapp2.0/school.runtimeconfig.json
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/bin/Debug/netcoreapp2.0/school.runtimeconfig.dev.json
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/bin/Debug/netcoreapp2.0/school.dll
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/bin/Debug/netcoreapp2.0/school.pdb
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/obj/Debug/netcoreapp2.0/school.csprojResolveAssemblyReference.cache
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/obj/Debug/netcoreapp2.0/school.csproj.CoreCompileInputs.cache
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/obj/Debug/netcoreapp2.0/school.AssemblyInfoInputs.cache
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/obj/Debug/netcoreapp2.0/school.AssemblyInfo.cs
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/obj/Debug/netcoreapp2.0/school.dll
+/Users/jufitasu/Documents/Sieben/Workspace/vs/school/school/obj/Debug/netcoreapp2.0/school.pdb
